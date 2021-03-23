@@ -10,5 +10,4 @@ describe('totalPhoneBill function', () => {
     it('should return R0.65 for "sms"', () => {
         assert.equal(totalPhoneBill('sms'), 'R0.65')
     });
-    
 });
