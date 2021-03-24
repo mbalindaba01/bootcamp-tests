@@ -1,11 +1,11 @@
 describe('findItemsOver20 function', () => {
-    it('should return {name: pears, qty: 27} for ({name: apples, qty: 10}, {name: pears, qty: 27})', () => {
+    it('should return all objects with quantity of over 20 items', () => {
         assert.deepEqual(findItemsOver20([
         {name : 'apples', qty : 10},
         {name : 'pears', qty : 37},
         ]), [ {name : 'pears', qty : 37} ])
     });
-    it('should return an empty array for ({name: apples, qty: 10}, {name: pears, qty: 14})', () => {
+    it('should return an empty array if there are no objects with a quantity exceeding 20 in the smaple provided', () => {
         assert.deepEqual(findItemsOver20([
             {name : 'apples', qty : 10},
             {name : 'pears', qty : 14}]), [])

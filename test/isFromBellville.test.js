@@ -2,9 +2,6 @@ describe('isFromBellville function', () => {
     it('should return true for "CY 343 456"', () => {
         assert.equal(isFromBellville('CY 343 456'), true);
     });
-    it('should return true for "CY 146 675"', () => {
-        assert.equal(isFromBellville('CY 146 675'), true);
-    });
     
     it('should return false for "CA 887 125"', () => {
         assert.equal(isFromBellville('CA 887 125'), false);
